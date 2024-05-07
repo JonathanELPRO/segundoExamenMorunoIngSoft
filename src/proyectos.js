@@ -1,6 +1,7 @@
 
 function buscarProyectoPor(nombre, proyectos){
-  if(proyectos.length==0)
+  const TAMANIOPROYECTOS=proyectos.length
+  if(TAMANIOPROYECTOS==0)
     {
       return "No existen proyectos"
     }
