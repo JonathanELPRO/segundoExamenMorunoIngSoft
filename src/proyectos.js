@@ -1,5 +1,6 @@
 
 function buscarProyectoPor(nombre, proyectos){
+  const STRINGVACIO=""
   const TAMANIOPROYECTOS=proyectos.length
   let iteradorProyectos
   let proyectosBuscados=[]
@@ -16,7 +17,7 @@ function buscarProyectoPor(nombre, proyectos){
   }
   if (proyectosBuscados.length==0)
     {
-      return ""
+      return STRINGVACIO
     }
   return proyectosBuscados.join(",")
 }
