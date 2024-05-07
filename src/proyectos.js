@@ -8,7 +8,8 @@ function buscarProyectoPor(nombre, proyectos){
       return "No existen proyectos"
     }
   for (iterador=0;iterador<TAMANIOPROYECTOS;iterador++){
-    if (proyectos[iterador]==nombre)
+    let proyectoBuscado=proyectos[iterador]
+    if (proyectoBuscado==nombre)
       {
         proyectosBuscados.push(proyectos[iterador])
       }
