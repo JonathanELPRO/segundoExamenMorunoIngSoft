@@ -2,6 +2,7 @@
 function buscarProyectoPor(nombre, proyectos){
   const TAMANIOPROYECTOS=proyectos.length
   let iterador
+  let proyectosBuscados=[]
   if(TAMANIOPROYECTOS==0)
     {
       return "No existen proyectos"
@@ -9,9 +10,9 @@ function buscarProyectoPor(nombre, proyectos){
   for (iterador=0;iterador<TAMANIOPROYECTOS;iterador++){
     if (proyectos[iterador]==nombre)
       {
-        return proyectos[iterador]
+        proyectosBuscados.push(proyectos[iterador])
       }
   }
-  return proyectos[0]
+  return proyectosBuscados.join(",")
 }
 export default buscarProyectoPor;

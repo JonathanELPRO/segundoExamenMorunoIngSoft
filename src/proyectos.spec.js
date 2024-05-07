@@ -13,4 +13,8 @@ describe("buscar proyecto por nombre", () => {
     let proyectos=["proy1","proy2"]
     expect(buscarProyectoPor("proy2",proyectos)).toEqual("proy2");
   });
+  it("Deberia retornar los nombres de los proyectos que coincidan con la busqueda", () => {
+    let proyectos=["proy1","proy2","proy2"]
+    expect(buscarProyectoPor("proy2",proyectos)).toEqual("proy2,proy2");
+  });
 });
