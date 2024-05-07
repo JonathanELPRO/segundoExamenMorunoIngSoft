@@ -9,7 +9,7 @@ function buscarProyectoPor(nombre, proyectos){
     }
   for (iterador=0;iterador<TAMANIOPROYECTOS;iterador++){
     let proyectoBuscado=proyectos[iterador]
-    if (proyectoBuscado==nombre)
+    if (proyectoBuscado.startsWith(nombre))
       {
         proyectosBuscados.push(proyectos[iterador])
       }
