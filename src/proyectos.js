@@ -1,5 +1,9 @@
 
 function buscarProyectoPor(nombre, proyectos){
-  return "No existen proyectos"
+  if(proyectos.length==0)
+    {
+      return "No existen proyectos"
+    }
+  return proyectos[0]
 }
 export default buscarProyectoPor;
