@@ -14,6 +14,10 @@ function buscarProyectoPor(nombre, proyectos){
         proyectosBuscados.push(proyectos[iteradorProyectos])
       }
   }
+  if (proyectosBuscados.length==0)
+    {
+      return ""
+    }
   return proyectosBuscados.join(",")
 }
 export default buscarProyectoPor;

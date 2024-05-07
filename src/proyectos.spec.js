@@ -21,4 +21,8 @@ describe("buscar proyecto por nombre", () => {
     let proyectos=["proy1","proy2","proy2","proy2Moruno","proy2Moruno2"]
     expect(buscarProyectoPor("proy2",proyectos)).toEqual("proy2,proy2,proy2Moruno,proy2Moruno2");
   });
+  it("Deberia retornar uns tring vacio si  no hay coincidencias de busqueda en una lista de proyectos con proyectos", () => {
+    let proyectos=["proy1","proy2","proy2","proy2Moruno","proy2Moruno2"]
+    expect(buscarProyectoPor("proy4",proyectos)).toEqual("");
+  });
 });
